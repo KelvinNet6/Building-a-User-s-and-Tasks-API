@@ -1,1 +1,16 @@
-
+{
+  "name": "C# Development Environment",
+  "image": "mcr.microsoft.com/dotnet/core/sdk:7.0",
+  "features": {
+    "dotnet": "7.0"
+  },
+  "postCreateCommand": "dotnet --version",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "ms-vscode.azure-cli-tools",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
+}
